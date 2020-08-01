@@ -1,0 +1,219 @@
+body{
+    padding: 1vw;
+    background:linear-gradient(#D3FCD5, #c2f970, #c2f970);
+}
+
+.navbar{
+    position: static;
+    background-color: #2D3142;
+    color: #ef8354;
+    float: centre;
+    width: 100vw;
+    z-index:10;
+}
+
+#info{
+    display: block;
+    padding: 1vw;
+    margin: 1vw;
+    color: #2D3142;
+    font-family: 'Sahitya', 'Times New Roman', Times, serif;
+    font-size: 100%;
+    border-radius: 2vw;
+}
+
+#info:hover{
+    background-color: #b8fcbc;
+    -webkit-transition: background 1s ease-in-out;
+    -moz-transition: background 1s ease-in-out;
+    -ms-transition: background 1s ease-in-out;
+    -o-transition: background 1s ease-in-out;
+    transition: background 1s ease-in-out;
+}
+
+.nav-item a{
+    font-family: "Special Elite", 'Times New Roman', Times, serif ;
+}
+
+.nav-item a .active{
+    color: #ef8354;
+}
+
+.jumbotron{
+    background: linear-gradient(#4F5D75, #2D3142);
+}
+
+.jumbotron h1{
+    font-family:"Fredericka the Great", Arial, Helvetica, sans-serif;
+    color: #D3FCD5;
+}
+.jumbotron p{
+    font-family: "Marck Script", cursive;
+    font-size: 120%;
+    color:#EF8354;
+}
+
+#elevator{
+    display:none;
+}
+
+.book{
+    width:100vw;
+    padding: 3vw;
+    margin:1vw;
+    background: linear-gradient(#4F5D75, #2D3142);
+    border-radius: 1vh;
+}
+
+.book-pic{
+    width: 90vw;
+    display: block;
+    padding: 1vw;
+    margin: auto;
+
+}
+
+.book-info{
+    display:block;
+    padding: 1vw;    
+    width: 90vw;
+    color: #D3FCD5;
+    background-color: #2D3142;
+    margin: auto;
+}
+
+.book-info h3{
+    font-family: Sahitya, 'Times New Roman', Times, serif;
+    color: #ef8354;
+}
+
+.writePic{
+    margin: auto;
+    height: 50vh;
+}
+
+#img_write{
+    display: none;
+}
+
+.info_write{
+    display: block;
+    padding: 1vw;
+    background-color: #4F5D75;
+    margin: 2vw;
+    border-radius: 1vw;
+    color: #D3FCD5;
+}
+.info_write h3{
+    font-family: "Special Elite", 'Times New Roman', Times, serif;
+    color: #EF8354; 
+    background: linear-gradient(#4F5D75, #2D3142);
+}
+
+.info_write p{
+    font-family: "Sahitya", cursive;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+@media screen and (min-width: 540px){
+    .navbar{
+        width: auto;
+
+    }
+
+    .nav-item a{
+        width: 15vw;
+        margin:5px;
+        text-align: center;
+    }
+
+    #elevator{
+        display: block;
+        float:left;
+        width: 20vw;
+        height: 100vh;
+        top:0;
+        margin: 1vw;
+        position: static;
+        overflow: auto;
+    }
+
+    #elevator a{
+        margin: 1vw;
+        font-size: 80%;
+        padding: 0.25vw;
+        text-align: center;
+        width:20vw;
+    }
+
+    #elevator :nth-child(even){
+        color: #2D3142;
+        font-family: "Special Elite", cursive;
+        border: solid #2D3142;
+    }
+    
+    #elevator :nth-child(odd){
+        color: #EF8345;
+        font-family: "Special Elite", cursive;
+        border: solid #EF8345;
+    }
+
+    .book{
+        display: block;
+        width:66vw;
+        float:right;
+        background-image: transparent;
+        padding: 1%;
+    }    
+    .book-pic{
+        height: 30vh;
+        width:auto;
+        margin: 1px;
+        border-radius: 1vw;
+        float:left;
+    }
+
+    .book-info{
+        display:inline;
+        margin: 1px;
+        padding: 1px;
+        background-color: rgba(0,0,0,0);
+        font-size: 70%;
+    }
+
+    .book h3{
+        background: linear-gradient(to right, #4F5D75, #2D3142, #2D3142, #2D3142);
+    }
+
+    #pictureCarousel{
+        display: none;
+    }
+
+    #img_write{
+        display: block;
+        width: 30vw;
+        clear: left;
+        float: left;
+        margin: 2vw 1vw;
+        padding: 1vw 0vw;
+    }
+    
+    #img_write .writePic{
+
+        display:block;
+        width: 30vw;
+        height: auto;
+        background-color: #2D3142;
+        padding: 10px;
+        margin:auto;
+        overflow: hidden;
+    }
+
+    .info_write{
+        width: 60%;
+        float:right;
+    }
+
+}
